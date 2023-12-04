@@ -37,7 +37,7 @@ public class MainWindow extends JFrame {
     }
 
     private void initializeUI() {
-        // Table Panel
+        
         tablePanel.setSize(100, 100);
         tablePanel.setBackground(Color.LIGHT_GRAY);
         tablePanel.add(flop1Btn);
@@ -51,16 +51,13 @@ public class MainWindow extends JFrame {
         turnButton.setVisible(false);
         riverButton.setVisible(false);
 
-        // Hand Panel
         handPanel.add(humanCard1Btn);
         handPanel.add(humanCard2Btn);
 
-        // Button Panel
         buttonPanel.add(startBtn);
         buttonPanel.add(nextBtn);
         buttonPanel.add(stopBtn);
 
-        // Main Layout
         setLayout(new BoxLayout(getContentPane(), BoxLayout.PAGE_AXIS));
         add(buttonPanel);
         add(tablePanel);
@@ -69,8 +66,6 @@ public class MainWindow extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 250);
     }
-
-    // Getter and Setter methods
 
     public JButton getStartBtn() {
         return startBtn;
